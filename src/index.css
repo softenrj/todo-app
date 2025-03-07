@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer utilities {
+    /* Scrollbar width and height */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+  
+    /* Scrollbar track */
+    .custom-scrollbar::-webkit-scrollbar-track {
+      border-radius: 1px;
+      background-color: #DFE9EB;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-track:hover,
+    .custom-scrollbar::-webkit-scrollbar-track:active {
+      background-color: #B8C0C2;
+    }
+  
+    /* Scrollbar thumb */
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #AF7EEB;
+      min-height: 20px; /* Set a minimum height */
+      max-height: 50px; /* Set a maximum height */
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background-color: #B791EB;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-thumb:active {
+      background-color: #C4ABEB;
+    }
+  }
+  
