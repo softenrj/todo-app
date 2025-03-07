@@ -18,12 +18,6 @@ A modern and minimal **To-Do List** built with **React.js** and **Tailwind CSS**
 - **Local Storage** – To store tasks  
 
 
-### 🎨 Light Mode  
-![Light Mode](screenshot-light.png)
-
-### 🌙 Dark Mode  
-![Dark Mode](screenshot-dark.png)
-
 ## 💪 Installation
 
 ### 1️⃣ Clone the repository  
