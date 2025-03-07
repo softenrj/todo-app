@@ -11,7 +11,7 @@ const List = ( {con,remove }) => {
 
         <div className='flex justify-between items-center mx-4 my-4'>
             <div className='flex gap-4'><input className='cursor-pointer' type="Radio" onClick={HandleClick} />
-            <p className={`break-all text-wrap font-semibold text-[20px] ${isclicked && 'line-through decoration-gray-300 text-gray-400'}`}>{con}</p>
+            <p className={`break-all text-wrap font-semibold text-[18px] ${isclicked && 'line-through decoration-gray-300 text-gray-400'}`}>{con}</p>
             </div>
             {isclicked && <DeleteOutlineIcon fontSize='small' className='cursor-pointer' onClick={() => {remove(); setclick(false)}} />}
         </div>
