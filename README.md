@@ -14,8 +14,6 @@ A modern and minimal **To-Do List** built with **React.js** and **Tailwind CSS**
 - **Desktop view**
    ![view](screenshort/desktop1.png)
    ![view](screenshort/desktop2.png)
-- **Mobile view**
-   ![mobile view](screenshort/mobile1.png)
 ## 🛠️ Tech Stack
 
 - **React.js** – Component-based UI  
