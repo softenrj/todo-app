@@ -8,8 +8,14 @@ A modern and minimal **To-Do List** built with **React.js** and **Tailwind CSS**
 ✅ **Mark as Completed** – Tasks can be marked as done with a strike-through effect.  
 ✅ **Delete Tasks** – Remove completed tasks easily.  
 ✅ **Local Storage** – Tasks persist even after refreshing the page.  
-✅ **Responsive Design** – Works seamlessly on mobile and desktop.  
+✅ **Responsive Design** – Works seamlessly on mobile and desktop. 
 
+## 📜 ScreenShort
+- **Desktop view**
+   ![view](screenshort/desktop1.png)
+   ![view](screenshort/desktop2.png)
+- **Mobile view**
+   ![mobile view](screenshort/mobile1.png)
 ## 🛠️ Tech Stack
 
 - **React.js** – Component-based UI  
