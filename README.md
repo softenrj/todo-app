@@ -17,6 +17,7 @@ A modern and minimal **To-Do List** built with **React.js** and **Tailwind CSS**
 ## 🛠️ Tech Stack
 
 - **React.js** – Component-based UI  
+- **Redux ToolKit** – state management  
 - **Tailwind CSS** – For modern styling  
 - **Material UI Icons** – For an enhanced UI  
 - **Local Storage** – To store tasks  
