@@ -1,17 +1,16 @@
 import React, { useState, useContext } from 'react';
-import { todoContext } from './main';
+import { useDispatch } from 'react-redux';
+import { addTodo } from '../features/todoSlicer';
 
 const TextArea = ({done}) => {
-    const { todos, settodos } = useContext(todoContext);
     const [text, setText] = useState("");
+    const dispatch = useDispatch();
 
     const handleAddTodo = () => {
-        if (text.trim() !== "") {
-            settodos([...todos, text]);
-            setText("");
-            done();
-        }
-    };
+        dispatch(addTodo(text));
+        setText('');
+        done();
+    }
 
     return (
         <div className="flex flex-col items-center p-4 bg-white">
@@ -19,6 +18,7 @@ const TextArea = ({done}) => {
                 className="w-full md:w-3/4 h-24 p-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#AF7EEB] custom-scrollbar"
                 placeholder="Write your to-do..."
                 value={text}
+                autoFocus
                 onChange={(e) => setText(e.target.value)}
             />
             <button 

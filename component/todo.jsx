@@ -1,12 +1,15 @@
 import React from 'react';
 import List from './list';
-import { todoContext } from './main';
+import { useSelector, useDispatch } from 'react-redux'
+import { removeTodo } from '../features/todoSlicer';
 
 const Todo = () => {
-    const { todos , settodos } = React.useContext(todoContext)
+    const todo = useSelector(state => state.todo);
+
+    const dispatch = useDispatch();
 
     const HandleRemove = (key) => {
-        settodos(todos.filter((item,i) => i !== key));
+        dispatch(removeTodo(key));
     }
 
     return (
@@ -15,8 +18,8 @@ const Todo = () => {
          min-h-20
         overflow-x-auto custom-scrollbar'>
             {
-                todos.map((con,i) => (
-                    <List con={con} key={i} remove = {() => HandleRemove(i)} />
+                todo.map(({_id,content}) => (
+                    <List con={content} key={_id} remove = {() => HandleRemove(_id)} />
                 ))
             }
         </div>

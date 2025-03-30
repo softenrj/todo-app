@@ -5,7 +5,6 @@ const List = ( {con,remove }) => {
     const HandleClick = (e) => {
         setclick(!isclicked)
         if (isclicked) return e.target.checked = false;
-        console.log(e.target.checked);
     }
     return (
 
